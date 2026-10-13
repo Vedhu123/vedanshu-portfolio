@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vedanshu Yaduvanshi — Software Engineer</title>
+    <meta
+      name="description"
+      content="Portfolio of Vedanshu Yaduvanshi, a computer science graduate in Bhopal building reliable software with C++, algorithms, and the MERN stack."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,520;0,9..144,640;1,9..144,520&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <header class="nav">
+      <a class="brand" href="#top">Vedanshu Yaduvanshi</a>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-github" href="https://github.com/Vedhu123" target="_blank" rel="noreferrer">GitHub</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" data-hero data-state="idle">
+        <div class="hero-copy">
+          <p class="eyebrow">Hey, I'm</p>
+          <h1>Vedanshu <em>Yaduvanshi.</em></h1>
+          <p class="role">Software Engineer</p>
+          <p class="lede">
+            Computer science graduate from Bhopal. I build reliable software with C++,
+            data structures, and the MERN stack — from search algorithms to full-stack products.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#work">See the work</a>
+            <a class="button button-ghost" href="https://github.com/Vedhu123" target="_blank" rel="noreferrer">github.com/Vedhu123</a>
+          </div>
+          <ul class="facts">
+            <li>Bhopal, Madhya Pradesh</li>
+            <li>B.Tech CSE, 2026</li>
+            <li>CGPA 7.07</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <p class="bubble" data-line>Move the cursor to tell me.</p>
+          <div class="stage" data-stage>
+            <img src="assets/portrait.jpg" alt="Portrait of Vedanshu Yaduvanshi" />
+          </div>
+          <div class="zones" aria-hidden="true">
+            <span>Left</span>
+            <span>Center</span>
+            <span>Right</span>
+          </div>
+          <div class="touch-controls">
+            <button type="button" data-react="left">Look left</button>
+            <button type="button" data-react="right">Say hello</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="section">
+        <div class="section-head">
+          <p class="eyebrow">Selected work</p>
+          <h2>Projects with a clear engineering problem.</h2>
+        </div>
+
+        <article class="project">
+          <div>
+            <p class="index">01 — 2025</p>
+            <h3>Rubik’s Cube Solver</h3>
+            <p class="stack">C++ · OOP · BFS · DFS · IDDFS · Korf’s IDA*</p>
+          </div>
+          <div>
+            <p>
+              A virtual 3×3 cube and a search-based solver. The model is split into modular
+              pieces so the cube state, moves, and search strategies stay independent.
+            </p>
+            <ul>
+              <li>Solves cubes scrambled 8 moves deep in under 3 seconds with BFS, DFS, and IDDFS.</li>
+              <li>Korf’s IDA* with a custom heuristic solves a 13-move scramble in under 10 seconds.</li>
+            </ul>
+            <a href="https://github.com/Vedhu123/Vedanshu-Rubik-s-Cube-Solver." target="_blank" rel="noreferrer">View on GitHub</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div>
+            <p class="index">02 — 2026</p>
+            <h3>Job Portal</h3>
+            <p class="stack">React · Node.js · Express · MongoDB · JWT · RBAC</p>
+          </div>
+          <div>
+            <p>
+              A full-stack hiring product for candidates, recruiters, and administrators.
+              The interface, REST API, and database stay in separate layers so each role
+              can be changed without rewriting the others.
+            </p>
+            <ul>
+              <li>Job search, filters, application tracking, resume upload, and recruiter tools.</li>
+              <li>JWT authentication and role-based access for three user types.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project">
+          <div>
+            <p class="index">03</p>
+            <h3>Custom Hash Map</h3>
+            <p class="stack">C++</p>
+          </div>
+          <div>
+            <p>
+              A hashmap built from scratch in C++, published alongside the cube solver on GitHub.
+            </p>
+            <a href="https://github.com/Vedhu123/custom-hashmap-cpp" target="_blank" rel="noreferrer">View on GitHub</a>
+          </div>
+        </article>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="section-head">
+          <p class="eyebrow">Experience</p>
+          <h2>Internship</h2>
+        </div>
+        <article class="job">
+          <div>
+            <h3>C++ Programming Intern</h3>
+            <p>Hex Softwares Pvt. Ltd.</p>
+          </div>
+          <div>
+            <p class="when">Nov 2025 — Dec 2025</p>
+            <ul>
+              <li>Designed C++ applications with object-oriented structure so modules could be reused and maintained.</li>
+              <li>Built and tuned algorithms around runtime cost and computational efficiency.</li>
+              <li>Debugged logic and runtime faults through systematic testing, which made the applications more stable.</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <section id="about" class="section about">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>I like software that stays understandable after it ships.</h2>
+          <p>
+            I am a 2026 computer science graduate of Oriental College of Technology, Bhopal.
+            My foundation is C++, data structures, object-oriented design, and the rest of the
+            core curriculum: operating systems and databases. On the web I work with React,
+            Node, Express, REST APIs, and MongoDB.
+          </p>
+          <p>
+            Outside class I volunteered with We Care Orgg NGO and co-headed the video editing
+            team on the Student Activity Council. I play chess and cricket.
+          </p>
+        </div>
+        <div class="skill-grid">
+          <div>
+            <h3>Languages</h3>
+            <p>C++, C, JavaScript, Python</p>
+          </div>
+          <div>
+            <h3>Computer science</h3>
+            <p>Data structures &amp; algorithms, OOP, operating systems, DBMS, software design</p>
+          </div>
+          <div>
+            <h3>Engineering</h3>
+            <p>Debugging, testing, SDLC, performance, reliability, secure software practices</p>
+          </div>
+          <div>
+            <h3>Web &amp; data</h3>
+            <p>React, Node.js, Express, REST, JWT, RBAC, MySQL, MongoDB, Git</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section split">
+        <article>
+          <p class="eyebrow">Education</p>
+          <h2>B.Tech, Computer Science</h2>
+          <p>Oriental College of Technology, Bhopal</p>
+          <p class="when">2022 — 2026 · CGPA 7.07 / 10</p>
+        </article>
+        <article>
+          <p class="eyebrow">Certifications</p>
+          <ul class="plain">
+            <li>Google Cloud — Introduction to Generative AI, 2025</li>
+            <li>Accenture Software Engineering Simulation, 2025</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="contact" class="section contact">
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s build something reliable.</h2>
+        <div class="contact-links">
+          <a href="mailto:vedanshuyaduvanshi@gmail.com">vedanshuyaduvanshi@gmail.com</a>
+          <a href="tel:+917974291079">+91 79742 91079</a>
+          <a href="https://github.com/Vedhu123" target="_blank" rel="noreferrer">GitHub · Vedhu123</a>
+          <a href="https://www.linkedin.com/in/vedanshu-yaduvanshi-6b012b285" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+        <p class="place">Bhopal, Madhya Pradesh</p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
