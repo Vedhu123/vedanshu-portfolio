@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rubik’s Cube Solver — Vedanshu Yaduvanshi</title>
+    <meta
+      name="description"
+      content="A live 3×3 Rubik’s Cube solver using BFS, DFS, IDDFS, and Korf-style IDA*."
+    />
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,520;0,9..144,640;1,9..144,520&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="top">
+      <a class="back" href="../index.html">Portfolio</a>
+      <a href="https://github.com/Vedhu123/Vedanshu-Rubik-s-Cube-Solver." target="_blank" rel="noreferrer">GitHub source</a>
+    </header>
+
+    <main>
+      <section class="stage">
+        <p class="eyebrow">Live solver</p>
+        <h1>Rubik’s Cube <em>Solver.</em></h1>
+        <div class="viewport" id="viewport">
+          <div class="scene" id="scene"></div>
+        </div>
+        <p class="hint">Drag to look around. U D L R F B on the keyboard, Shift for an inverse.</p>
+      </section>
+
+      <section class="panel">
+        <div>
+          <p class="label">Search</p>
+          <div class="algorithms" id="algorithms" role="radiogroup" aria-label="Search algorithm"></div>
+          <p class="about" id="about"></p>
+        </div>
+
+        <div class="depth-row">
+          <label for="depth">Scramble depth <strong id="depth-value">6</strong></label>
+          <input id="depth" type="range" min="1" max="8" value="6" />
+          <p class="note" id="depth-note"></p>
+        </div>
+
+        <div class="actions">
+          <button class="primary" id="scramble" type="button">Scramble</button>
+          <button class="primary" id="solve" type="button">Solve</button>
+          <button id="stop" type="button" hidden>Stop</button>
+          <button id="reset" type="button">Reset</button>
+        </div>
+
+        <p class="status" id="status" role="status">Solved. Scramble it, then pick a search.</p>
+
+        <div>
+          <p class="label">Solution</p>
+          <div class="moves" id="moves"><span class="empty">No solution yet.</span></div>
+        </div>
+
+        <div>
+          <p class="label">Turns</p>
+          <div class="pad" id="pad"></div>
+        </div>
+
+        <div>
+          <p class="label">Face map</p>
+          <div class="net" id="net"></div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
